@@ -1,18 +1,12 @@
-from socialauth.models import AuthMeta, UserAssociation, TwitterUserProfile
-from socialauth.models import GmailContact, YahooContact, TwitterContact, \
-                            FacebookContact, SocialProfile
+from socialauth.models import AuthMeta, OpenidProfile, TwitterUserProfile, \
+FacebookUserProfile, LinkedInUserProfile, GithubUserProfile, FoursquareUserProfile
 
 from django.contrib import admin
 
 admin.site.register(AuthMeta)
-admin.site.register(UserAssociation)
+admin.site.register(OpenidProfile)
 admin.site.register(TwitterUserProfile)
-
-admin.site.register(GmailContact)
-admin.site.register(YahooContact)
-admin.site.register(TwitterContact)
-admin.site.register(FacebookContact)
-admin.site.register(SocialProfile)
-
-
-
+admin.site.register(FacebookUserProfile)
+admin.site.register(LinkedInUserProfile)
+admin.site.register(GithubUserProfile)
+admin.site.register(FoursquareUserProfile)
